@@ -2,7 +2,7 @@
 
 # Use the Salt Project bootstrap script to install Salt
 curl -L https://bootstrap.saltproject.io | sudo sh -s -- -x python3 \
-    -j '{"master_type": "disable", "file_roots": {"top": ["/srv/local/top"], "base": ["/srv/local/salt", "/srv/remote/salt"]}, "startup_states": "highstate", "pub_ret": false, "mine_enabled": false, "return": "rawfile_json", "top_file_merging_strategy": "merge_all"}' \
+    -j '{"master_type": "disable", "file_roots": {"top": ["/srv/local/top"], "base": ["/srv/local/salt", "/srv/remote/salt"]}, "startup_states": "highstate", "pub_ret": false, "mine_enabled": false, "return": "rawfile_json", "top_file_merging_strategy": "merge_all", "file_client": "local"}' \
     stable 3004
 
 # Make local directories
