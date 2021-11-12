@@ -6,4 +6,4 @@ certainly swap out those technologies for others (such as Red Hat, Azure,
 Blob Storage, and Idem) and accomplish the same goal.
 
 More information on how this works is on the
-[EITR Technologies Blog](https://eitr.tech/blog).
+[EITR Technologies Blog](https://eitr.tech/blog/2021/11/12/salt-masterless.html).
