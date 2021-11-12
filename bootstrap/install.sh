@@ -41,5 +41,5 @@ base:
     - entrypoint
 EOF
 
-# Run a highstate with the local files in place
-salt-call state.apply
+# Restart the service to run a highstate with the local files in place
+salt-call service.restart salt-minion
