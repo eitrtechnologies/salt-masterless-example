@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+        # Don't modify log files or text files used for testing
+        types_or: [python, shell]
+      - id: check-case-conflict
+      - id: end-of-file-fixer
+      - id: check-json
+      - id: check-toml
+        additional_dependencies: ["toml"]
+      - id: check-yaml
+  - repo: https://github.com/warpnet/salt-lint
+    rev: v0.6.1
+    hooks:
+      - id: salt-lint
